@@ -44,8 +44,8 @@ function App() {
         </button>
         <h1 className={statusClass}>Coordinates</h1>
         <p className={statusClass}>{status}</p>
-        {lat && <p>Latitude: {lat}</p>}
-        {lng && <p>Longitude: {lng}</p>}
+        {lat && <p className="lat">Latitude: {lat}</p>}
+        {lng && <p className="lng">Longitude: {lng}</p>}
       </div>
     </div>
   );
