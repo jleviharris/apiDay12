@@ -42,7 +42,7 @@ function App() {
         <button className="btn" onClick={getLocation}>
           Get Location{" "}
         </button>
-        <h1>Coordinates</h1>
+        <h1 className={statusClass}>Coordinates</h1>
         <p className={statusClass}>{status}</p>
         {lat && <p>Latitude: {lat}</p>}
         {lng && <p>Longitude: {lng}</p>}
