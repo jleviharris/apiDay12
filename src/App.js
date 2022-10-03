@@ -9,15 +9,6 @@ function App() {
   const [statusClass, setStatusClass] = useState("base");
   const [cordClass, setCordClass] = useState("base");
 
-  // const showPosition = (position) => {
-  //   setLocation({
-  //     Latitude: position.coords.latitude,
-  //     Longitude: position.coords.longitude,
-  //   });
-  // };
-  // const getLocation = () => {
-  //   setLocation(navigator.geolocation.getCurrentPosition());
-  // };
   const getLocation = () => {
     if (!navigator.geolocation) {
       setStatus("Geolocation is not supported by your browser");
